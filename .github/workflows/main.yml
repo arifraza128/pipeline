@@ -21,10 +21,12 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+      working-directory: ./
 
     - name: Run tests
       run: npm test
+      working-directory: ./
 
     - name: Deploy (example)
       run: echo "Deploying your app..."
-      # Replace with actual deployment script or action
+      working-directory: ./
